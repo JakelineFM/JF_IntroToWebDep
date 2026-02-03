@@ -1,0 +1,90 @@
+<!doctype html>
+
+<htlm lang="en">
+
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=devicewidth, initial-scale=1"/>
+    <title> Intro to CSS Text and Spans </title>
+
+    <!-- This is how you write and internal style sheet-->
+    <style type="text/CSS"> 
+        
+        /* universal slectors begin with * */
+        *{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2 {
+            color: blueviolet;
+            background-color: chartreuse;
+
+            color: #FF0000;
+            background-color: #00990077;
+
+            color: rgb(0, 0, 120);
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        /* class selectors begin with .*/
+        .align.right {
+            width: 50%;
+            text-align: right;
+        }
+
+        .align.jutified {
+            text-align: justify;
+        }
+
+        .sillytext {
+            font-family: fantasy;
+        }
+
+        /* ID selectors beging with # */
+        #really_important {
+            font-weight: bold;
+            font-size: xx-large;
+        }
+
+    </style>
+
+  </head> 
+
+  <body>
+
+    <!-- inline styline will override any stylesheets above-->
+    <h1 style="margin: 20px 10px 5px 5px"; margin=""> 
+        Heading 1 Display Block 
+    </h1>
+
+    <h2> See color changes here </h2>
+
+    <p class="align_right">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Etiam tristique vehicula dictum. Nam placerat nunc et sem blandit maximus. 
+        Nunc ultricies justo eget congue vulputate. Nunc vehicula pulvinar purus, a egestas ex imperdiet ac. 
+        Donec nec metus leo. Nullam sed odio dictum, venenatis ex sed, tincidunt dolor. 
+        Vestibulum a ornare nisi. Mauris ante ligula, varius vitae congue vitae, feugiat non neque.
+        Mauris a massa posuere, euismod nisl id, venenatis mauris. 
+        <span class="sillytext"> Maecenas posuere, libero sit amet ultricies volutpat, elit nulla accumsan augue, 
+        sed condimentum ligula neque non nulla. Donec aliquet et arcu a blandit. </span>
+        Donec rutrum tincidunt est ut sollicitudin. Pellentesque pretium facilisis sapien, 
+        in ullamcorper risus mattis quis. Mauris accumsan ante auctor tortor finibus, eu hendrerit felis dignissim. 
+        Mauris rhoncus ligula ut diam varius blandit. Maecenas quis auctor tellus. Quisque sagittis vehicula leo, 
+        sit amet tincidunt tellus rutrum eget. Suspendisse nec faucibus ante. 
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+        
+    </p>
+
+    <p id="really_important" class="align_justified">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Etiam tristique vehicula dictum. Nam placerat nunc et sem blandit maximus. 
+        Nunc ultricies justo eget congue vulputate. Nunc vehicula pulvinar purus, a egestas ex imperdiet ac. 
+        Donec nec metus leo. Nullam sed odio dictum, venenatis ex sed, tincidunt dolor. 
+        Vestibulum a ornare nisi. Mauris ante ligula, varius vitae congue vitae, feugiat non neque.
+    </p>
+
+  </body>
+
+</htlm>   

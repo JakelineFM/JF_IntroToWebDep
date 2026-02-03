@@ -1,17 +1,82 @@
 <!DOCTYPE html>
-<htlm>
+<html>
+
   <head>
+    <!--
+     This is the vcharacter set atributte.
+     It specifies the character encoding of the HTML doc.
+     UTF-8 charset covers almost every font you will use. Failure to
+     add this tag will result in custom fonts not loading properly
+    -->
     <meta charset="UTF-8"/>
+    <!--
+     The viewport tag sets the initial scale adsensures proper responsive behaviour
+     Failure to include this tag will result in your media queries not working
+     or being recognized at all
+    -->
     <meta name="viewport" content="width=devicewidth, initial-scale=1"/>
-    <title> HMTL Elements 101 </title>
+
+    <title> HTML Boilerplate with Comments </title>
+
   </head> 
+
+  <!-- Everything inside the body tag shows up inside the browser window -->
   <body>
-    <h1>Heading 1</h1> 
-    <h2>Heading 2</h2> 
-    <h3>Heading 3</h3> 
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5> 
-    <h6>Heading 6</h6>
-    <p> Paragraph </p>
+    <h1>Heading 1</h1> <!-- Only One Per page -->
+    <h2>Heading 2</h2> <!-- Important text, as many as you want -->
+    <h3>Heading 3</h3> <!-- Subttitles -->
+    <h4>Heading 4</h4> <!-- Think of it as the title of a paper -->
+    <h5>Heading 5</h5> <!-- Usually good with h1-h4 -->
+    <h6>Heading 6</h6> <!-- The smallest one -->
+
+    <!-- Is not advisable to have text without a tag marking it up -->
+
+    <!-- Most of the text is going to be inside a p mark -->
+    <p>
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     In sit amet leo vel ipsum semper malesuada vitae euismod sem.
+     Cras risus urna, vehicula faucibus odio nec, pretium ullamcorper ante.
+     Duis dignissim ante sem, a blandit orci elementum ac.
+    </p>
+
+    <p>
+     Mauris blandit ex et lorem consectetur congue.
+     <strong> This is a bold type of formating</strong>
+     Pellentesque nec mi non sem tincidunt pulvinar.
+     Suspendisse eget cursus nibh, id tempor nunc.
+     Aenean non leo quis tellus interdum malesuada vel vitae enim.
+    </p>
+
+    <!-- This is a line to separate texts and create sections -->
+    <hr />
+
+    <img
+     src="https://placehold.co/600x400.jpg"
+     alt="This text should describe the image content for a screen reader"
+    />
+
+    <img
+     src="./img/backgroung.jpg"
+     alt="Pink and Purple Landscape"
+     width="500px"
+    />
+
+    <h3> Unordered List </h3>
+    <!-- ul stands for unordered list -->
+    <ul>
+     <li>item 1</li>
+     <li>item 2</li>
+     <li>item 3</li>
+    </ul> 
+
+    <h3> Ordered List </h3>
+    <!-- ol stands for ordered list -->
+    <ol>
+     <li>item 1</li>
+     <li>item 2</li>
+     <li>item 3</li>
+    </ol> 
+
   </body>
-</htlm>   
+
+</html>   

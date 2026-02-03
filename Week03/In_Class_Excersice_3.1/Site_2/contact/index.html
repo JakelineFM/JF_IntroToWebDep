@@ -12,14 +12,42 @@
     <!-- Place your Nav Links Here -->
     <nav>
         <!-- use UL LI and A for Nav Links within our NAV tag -->
-        Home
-        About
-        Contact
+        <li><a href="../index.html" >Home</a></li>
+        <li><a href="../about/" >About</a></li>
+        <li><a href="./index.html" >Contact</a></li>
     </nav>
+
     <h1>Contact Us</h1>
+
     <!-- Bonus - Place Images Here -->
+     <img src="../img/chicken3.jpeg" height="250px"/>
   
     <!-- Double Bonus - Add Contact Form Here -->
+     <form name="ContactUs" target="_self" action="userLogin.js" metod="POST">
+
+        <fieldset>
+
+            <legend>Leave your contact info here</legend>
+            <p>We will get back to you as soon as possible</p>
+
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" required/>
+
+            <label for="lasttName">Last Name</label>
+            <input type="text" name="lastName" required/>
+
+            <label for="email">Email</label>
+            <input type="text" name="email" required/>
+
+            <label for="phoneNumber">Phone Number</label>
+            <input type="number" name="phoneNumber" required/>
+
+            <button role="button">Submit</button>
+
+        </fieldset>
+
+    </form>
+    
 </body>
 
 </html>
